@@ -35,6 +35,9 @@ const SobreMim = () => {
             <p>
                 O essencial para saber sobre mim é que diante de rotinas corridas, responsabilidades e idas e vindas, vou querer sempre estar com um lápis na mão, um livro na bolsa e meu devocional em dia.
             </p>
+            <p>
+                Tenho como propósito sempre ser intencional em minhas artes e expressar a beleza do Reino, a alegria do cotidiano e a singularidade dos sentimentos.
+            </p>
           </div>
           <div className='botao'> {/*div do botão */}
           <a href={curriculo} download> {/* Ao clicar no botão o currículo será abaixado*/} 

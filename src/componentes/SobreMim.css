@@ -85,7 +85,7 @@
   height: 60px; /* Define a altura da estrela */
   width: auto; /* Largura automática para manter a proporção */
   left: 800px; /* Define a posição da estrela à esquerda */
-  bottom: -640px; /* Define a posição da estrela a partir do fundo */
+  bottom: -680px; /* Define a posição da estrela a partir do fundo */
 }
 
 .botaoCurriculo {

@@ -1,5 +1,5 @@
 // Importa o React e o hook useState para controle de estado
-import React, { useState } from "react";
+import { useState } from "react";
 
 // Importa o arquivo de estilos específico para o componente
 import "./Experiencias.css";
