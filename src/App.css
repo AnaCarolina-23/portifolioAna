@@ -1,0 +1,12 @@
+/* Fonte cursiva e tamanho grande para textos especiais */
+.diferente {
+  font-family: "Great Vibes", cursive;
+  font-size: 120px;
+}
+
+/* Define que a página toda vai ocupar 100% da altura da tela, sem margens ou padding */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}

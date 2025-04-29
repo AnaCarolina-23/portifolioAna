@@ -1,0 +1,215 @@
+/* Estilo geral do container principal */
+.historia {
+    background-color: #eae5d5; /* Cor de fundo suave */
+    display: flex; /* Usando flexbox para alinhar os itens */
+    flex-direction: column; /* Os itens dentro do container serão dispostos em coluna */
+    align-items: center; /* Alinha os itens horizontalmente ao centro */
+}
+
+/* Estilo para imagens dentro de elementos com a classe "borda" */
+.historia .borda img {
+    width: 100%; /* A imagem ocupa toda a largura do container */
+    height: auto; /* A altura é ajustada automaticamente para manter a proporção */
+}
+
+/* Estilo para o conteúdo principal */
+.historia .conteudo {
+    padding: 80px; /* Espaçamento interno ao redor do conteúdo */
+    position: relative; /* Define o conteúdo como relativo para manipulações posicionais */
+    width: 100%; /* Largura total disponível */
+    max-width: 1200px; /* Limita a largura máxima do conteúdo */
+}
+
+/* Estilo para a linha do tempo */
+.historia .linhaDoTempo {
+    display: flex; /* Usa flexbox para dispor os itens */
+    flex-direction: column; /* Organiza os itens em coluna */
+    gap: 30px; /* Espaço entre os itens da linha do tempo */
+}
+
+/* Estilo para cada evento na linha do tempo */
+.historia .evento {
+    display: flex; /* Usa flexbox para alinhar os itens dentro de cada evento */
+    flex-direction: row; /* Itens dispostos na horizontal */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    gap: 50px; /* Espaço entre os itens (imagem, texto, etc.) */
+}
+
+/* Estilo para os parágrafos dentro de cada evento */
+.historia .evento p {
+    max-width: 300px; /* Limita a largura do texto para não ficar muito esticado */
+}
+
+/* Estilo para as fotos dentro de cada evento */
+.historia .evento .fotos {
+    height: 150px; /* Define uma altura fixa para as fotos */
+    width: auto; /* A largura é ajustada automaticamente para manter a proporção */
+    object-fit: cover; /* Faz com que a imagem cubra a área do container, cortando se necessário */
+    border-radius: 50%; /* Torna as imagens redondas */
+    transition: transform 0.3s ease-in-out; /* Animação suave ao interagir com as fotos */
+}
+
+/* Efeito de zoom ao passar o mouse sobre as fotos */
+.historia .evento .fotos:hover {
+    transform: scale(1.1); /* Aumenta o tamanho da foto em 10% quando o mouse passa por cima */
+}
+
+/* Estilo para as estrelas dentro de cada evento */
+.historia .evento .estrela {
+    height: 60px; /* Define a altura das estrelas */
+    width: auto; /* A largura é ajustada automaticamente para manter a proporção */
+}
+
+/* Estilo para o primeiro parágrafo de textos dentro de "textos" */
+.historia .textos p:nth-child(1) {
+    margin: 0; /* Remove margens extras */
+    text-transform: uppercase; /* Torna o texto em maiúsculas */
+    margin-bottom: -60px; /* Ajusta a margem inferior para alinhar o texto corretamente */
+}
+
+/* Estilo para os outros parágrafos dentro de "textos" */
+.historia .textos p {
+    max-width: 400px; /* Limita a largura do texto */
+    margin-top: -18px; /* Ajusta a margem superior para o texto não ficar muito afastado */
+}
+
+/* Estilo para o título principal da seção */
+.historia h1 {
+    font-family: "Questrial", sans-serif; /* Define a fonte para o título */
+    font-size: 80px; /* Tamanho grande para o título */
+}
+
+/* Estilo para títulos especiais dentro da classe "diferente" */
+.historia .diferente {
+    font-family: "Great Vibes", cursive; /* Fonte cursiva e elegante */
+    font-size: 120px; /* Tamanho maior para destacar o título */
+}
+
+/* Estilo para o conteúdo de "textos", posicionado no canto superior direito */
+.historia .textos {
+    position: absolute; /* Posiciona os textos de forma absoluta */
+    top: 0; /* Coloca os textos no topo */
+    right: 100px; /* Ajusta a distância da margem direita */
+    text-align: right; /* Alinha o texto à direita */
+    display: flex; /* Usa flexbox para organizar os itens internamente */
+    flex-direction: column; /* Organiza os itens de forma vertical */
+    align-items: flex-end; /* Alinha os itens ao final do eixo horizontal */
+    z-index: 10; /* Coloca esse conteúdo acima dos outros */
+}
+
+/* Estilo para as imagens de estrelas verdes escuras */
+.historia .estrelasVerdesEscuras img {
+    height: 60px; /* Altura das imagens de estrelas */
+    width: auto; /* Ajuste automático da largura para manter a proporção */
+}
+
+/* Posicionamento específico para cada estrela */
+.historia .estrelasVerdesEscuras img:nth-child(1) {
+    position: absolute; /* Posiciona a estrela de forma absoluta */
+    z-index: 6; /* Define a sobreposição da estrela */
+    right: 40px; /* Ajusta a posição da estrela à direita */
+    top: 20px; /* Ajusta a posição da estrela no topo */
+}
+
+/* Reposicionamento das outras estrelas */
+.historia .estrelasVerdesEscuras img:nth-child(2) {
+    position: absolute;
+    z-index: 6;
+    right: 480px;
+    top: 140px;
+}
+
+.historia .estrelasVerdesEscuras img:nth-child(3) {
+    position: absolute;
+    z-index: 6;
+    right: 40px;
+    bottom: 40px;
+}
+
+.historia .estrelasVerdesEscuras img:nth-child(4) {
+    position: absolute;
+    z-index: 6;
+    right: 100px;
+    bottom: 100px;
+}
+
+/* Responsividade para telas menores que 768px (celulares, tablets) */
+@media (max-width: 768px) {
+    /* Ajusta o padding do conteúdo para telas menores */
+    .historia .conteudo {
+        padding: 40px;
+    }
+
+    /* Centraliza o texto para telas menores */
+    .historia .textos {
+        text-align: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    /* Ajusta o tamanho do título principal */
+    .historia h1 {
+        padding-top: 20px;
+        font-size: 60px;
+    }
+
+    /* Ajusta a linha do tempo para telas menores */
+    .historia .linhaDoTempo {
+        padding-top: 460px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Organiza os eventos em coluna em telas menores */
+    .historia .evento {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Ajusta as fotos nos eventos */
+    .historia .evento .fotos {
+        width: 100px; /* Reduz a largura das fotos */
+        height: 100px; /* Ajusta a altura das fotos */
+    }
+
+    /* Reduz o tamanho das estrelas */
+    .historia .evento .estrela {
+        height: 50px;
+    }
+
+    /* Ajusta o tamanho das estrelas no fundo */
+    .historia .estrelasVerdesEscuras img {
+        height: 50px;
+    }
+
+    /* Reposiciona as estrelas para telas menores */
+    .historia .estrelasVerdesEscuras img:nth-child(1) {
+        position: absolute;
+        z-index: 6;
+        right: 80px;
+        top: 40px;
+    }
+
+    .historia .estrelasVerdesEscuras img:nth-child(2) {
+        position: absolute;
+        z-index: 6;
+        right: 480px;
+        top: 130px;
+    }
+
+    .historia .estrelasVerdesEscuras img:nth-child(3) {
+        position: absolute;
+        z-index: 6;
+        right: 70px;
+        bottom: 30px;
+    }
+
+    .historia .estrelasVerdesEscuras img:nth-child(4) {
+        position: absolute;
+        z-index: 6;
+        right: 120px;
+        bottom: 90px;
+    }
+}

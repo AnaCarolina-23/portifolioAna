@@ -1,0 +1,171 @@
+/* Área principal da seção Destaques */
+.destaques {
+  background-color: #eae5d5; /* Cor de fundo bege */
+}
+
+/* Conteúdo interno com espaçamento */
+.destaques .conteudo {
+  padding: 60px;
+}
+
+/* Título centralizado */
+.destaques .titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Estilo do texto do título */
+.destaques h1 {
+  font-family: "Questrial", sans-serif;
+  font-size: 80px;
+  margin: 0;
+}
+
+/* Primeira letra do título com outra fonte e tamanho maior */
+.destaques .diferente {
+  font-family: "Great Vibes", cursive;
+  font-size: 120px;
+}
+
+/* Galeria de imagens em grade */
+.destaques .imagens {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+  gap: 40px; /* Espaço entre as imagens */
+  justify-items: center;
+  padding: 40px 0;
+}
+
+/* Estilo das imagens da galeria */
+.destaques .imagens img {
+  width: 300px;
+  height: auto;
+  padding: 40px;
+  transition: transform 0.3s ease-in-out; /* Animação suave */
+}
+
+/* Efeito de zoom nas imagens ao passar o mouse */
+.destaques .imagens img:hover {
+  transform: scale(1.1);
+}
+
+/* Estilo geral das estrelas verdes */
+.destaques .estrelasVerdeClara img {
+  height: 60px;
+  width: auto;
+}
+
+/* Posicionamento individual de cada estrela */
+.destaques .estrelasVerdeClara img:nth-child(1) {
+  position: absolute;
+  bottom: -3050px;
+  left: 465px;
+}
+
+.destaques .estrelasVerdeClara img:nth-child(2) {
+  position: absolute;
+  bottom: -2950px;
+  right: 470px;
+}
+
+.destaques .estrelasVerdeClara img:nth-child(3) {
+  position: absolute;
+  right: 40px;
+  top: 4000px;
+}
+
+.destaques .estrelasVerdeClara img:nth-child(4) {
+  position: absolute;
+  top: 4180px;
+  left: 500px;
+}
+
+.destaques .estrelasVerdeClara img:nth-child(5) {
+  position: absolute;
+  right: 500px;
+  top: 4680px;
+}
+
+.destaques .estrelasVerdeClara img:nth-child(6) {
+  position: absolute;
+  left: 30px;
+  top: 4500px;
+}
+
+.destaques .estrelasVerdeClara img:nth-child(7) {
+  position: absolute;
+  right: 40px;
+  top: 4900px;
+}
+
+.destaques .estrelasVerdeClara img:nth-child(8) {
+  position: absolute;
+  left: 30px;
+  top: 5300px;
+}
+
+.destaques .estrelasVerdeClara img:nth-child(9) {
+  position: absolute;
+  left: 80px;
+  top: 5200px;
+}
+
+/* Borda azul no final da seção */
+.destaques .borda img {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: flex-end;
+}
+
+/* Responsividade para tablets (≤ 1024px) */
+@media (max-width: 1024px) {
+  .destaques h1 {
+    font-size: 60px;
+  }
+
+  .destaques .diferente {
+    font-size: 90px;
+  }
+
+  .destaques .imagens {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas em tablets */
+    gap: 30px;
+  }
+
+  .destaques .imagens img {
+    width: 300px;
+    padding: 30px;
+  }
+
+  .destaques .conteudo {
+    padding: 40px;
+  }
+}
+
+/* Responsividade para celulares (≤ 768px) */
+@media (max-width: 768px) {
+  .destaques h1 {
+    font-size: 40px;
+  }
+
+  .destaques .diferente {
+    font-size: 70px;
+  }
+
+  .destaques .imagens {
+    grid-template-columns: 1fr; /* 1 coluna em celulares */
+    gap: 20px;
+  }
+
+  .destaques .imagens img {
+    width: 60%;
+    padding: 20px;
+  }
+
+  .destaques .conteudo {
+    padding: 20px;
+  }
+}

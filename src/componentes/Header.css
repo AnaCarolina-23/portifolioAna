@@ -1,0 +1,133 @@
+/* Estilo do cabeçalho principal */
+.header {
+  width: 100%; /* Largura completa */
+  height: 100vh; /* Altura da tela inteira */
+  margin: 0;
+  padding: 0;
+  background-image: url('../assets/capa.png'); /* Imagem de fundo */
+  background-size: cover; /* Cobrir toda a área */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+  display: flex; /* Usar flexbox para alinhar os itens */
+  align-items: center; /* Alinha ao centro verticalmente */
+  justify-content: center; /* Alinha ao centro horizontalmente */
+  position: relative; /* Necessário para posicionamento absoluto dos elementos internos */
+}
+
+/* Estiliza a parte de textos no cabeçalho */
+.header .textos {
+  text-align: center; /* Centraliza o texto */
+  color: #eae5d5; /* Cor do texto */
+  padding: 0 1rem; /* Adiciona um padding lateral */
+}
+
+/* Estilo do título principal (Portifólio) */
+.header h1 {
+  font-family: "Questrial", sans-serif; /* Fonte principal */
+  font-size: 10vw; /* Tamanho da fonte baseado na largura da tela */
+  margin: 0; /* Remove margem */
+}
+
+/* Estilo do nome do autor */
+.header h3 {
+  font-family: "Mea Culpa", cursive; /* Fonte cursiva */
+  font-size: 7vw; /* Tamanho da fonte baseado na largura da tela */
+  margin: 0; /* Remove margem */
+  position: absolute; /* Posicionamento absoluto dentro da seção */
+  z-index: 4; /* Garante que o nome fique sobre outros elementos */
+  bottom: -30px; /* Ajusta a posição vertical */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translate(-50%, -150%); /* Ajuste fino da posição */
+}
+
+/* Estilo da letra "P" estilizada */
+.header .diferente {
+  font-family: "Great Vibes", cursive; /* Fonte cursiva especial */
+  font-size: 13vw; /* Tamanho maior para o "P" */
+}
+
+/* Estilo da primeira estrela */
+.header .estrelas img:first-child {
+  position: absolute; /* Posicionamento absoluto */
+  height: 5vw; /* Tamanho da estrela baseado na largura da tela */
+  width: auto; /* Mantém a proporção da imagem */
+  z-index: 8; /* Garante que fique sobre outros elementos */
+  left: 20%; /* Posiciona à esquerda */
+  top: 40%; /* Posiciona verticalmente */
+}
+
+/* Estilo da segunda estrela */
+.header .estrelas img:last-child {
+  position: absolute; /* Posicionamento absoluto */
+  height: 5vw; /* Tamanho da estrela baseado na largura da tela */
+  width: auto; /* Mantém a proporção da imagem */
+  z-index: 8; /* Garante que fique sobre outros elementos */
+  right: 20%; /* Posiciona à direita */
+  top: 50%; /* Posiciona verticalmente */
+}
+
+/* Estilos responsivos para tablets e celulares */
+@media (max-width: 768px) {
+  /* Ajustes no tamanho do título principal em telas menores */
+  .header h1 {
+      font-size: 12vw;
+  }
+
+  /* Ajustes no tamanho do nome em telas menores */
+  .header h3 {
+      font-size: 9vw;
+      bottom: 18%; /* Ajuste na posição vertical */
+  }
+
+  /* Ajustes na letra "P" estilizada */
+  .header .diferente {
+      font-size: 15vw;
+  }
+
+  /* Ajuste no tamanho das estrelas */
+  .header .estrelas img:first-child,
+  .header .estrelas img:last-child {
+      height: 7vw;
+  }
+
+  /* Ajuste nas posições das estrelas */
+  .header .estrelas img:first-child {
+      left: 16%;
+      top: 35%;
+  }
+
+  .header .estrelas img:last-child {
+      right: 16%;
+      top: 54%;
+  }
+}
+
+/* Estilos responsivos para telas menores, como celulares */
+@media (max-width: 480px) {
+  /* Ajustes no tamanho do título principal em telas ainda menores */
+  .header h1 {
+      font-size: 14vw;
+  }
+
+  /* Ajustes no tamanho do nome em telas menores */
+  .header h3 {
+      font-size: 10vw;
+      bottom: 18%;
+  }
+
+  /* Ajustes na letra "P" estilizada */
+  .header .diferente {
+      font-size: 17vw;
+  }
+
+  /* Ajuste nas posições das estrelas */
+  .header .estrelas img:first-child {
+      left: 8%;
+      top: 35%;
+  }
+
+  .header .estrelas img:last-child {
+      right: 10%;
+      top: 45%;
+  }
+}

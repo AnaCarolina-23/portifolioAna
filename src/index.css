@@ -1,0 +1,8 @@
+/* Define configurações globais de fonte para o site */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; /* Fontes padrão modernas */
+  font-synthesis: none; /* Evita alterações automáticas na fonte */
+  text-rendering: optimizeLegibility; /* Melhora a leitura de textos */
+  -webkit-font-smoothing: antialiased; /* Suaviza as fontes no Chrome/Safari */
+  -moz-osx-font-smoothing: grayscale; /* Suaviza fontes no Firefox */
+}

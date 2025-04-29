@@ -1,0 +1,186 @@
+/* Estilos para a seção "Sobre Mim" */
+.sobreMim {
+  padding: 120px; /* Adiciona espaçamento interno em toda a seção */
+  display: flex; /* Usa o modelo de layout flexbox */
+  background-color: #536b87; /* Cor de fundo da seção */
+  flex-direction: row; /* Organiza os elementos na horizontal */
+}
+
+/* Estilos para o título principal (h1) da seção "Sobre Mim" */
+.sobreMim h1 {
+  font-family: "Questrial", sans-serif; /* Define a fonte do título */
+  color: #eae5d5; /* Cor do texto */
+  font-size: 80px; /* Tamanho da fonte */
+}
+
+/* Estilos para o subtítulo (h3) da seção "Sobre Mim" */
+.sobreMim h3 {
+  font-family: "Mea Culpa", cursive; /* Fonte cursiva para o subtítulo */
+  margin: 0; /* Remove a margem padrão */
+  color: #b98a80; /* Cor do texto */
+  font-size: 70px; /* Tamanho da fonte */
+  position: absolute; /* Posiciona o subtítulo de forma absoluta */
+  z-index: 5; /* Coloca o subtítulo acima de outros elementos */
+  bottom: -345px; /* Define a posição do subtítulo a partir do fundo */
+  left: 210px; /* Define a posição à esquerda */
+}
+
+/* Estilo para o texto destacado na seção "Sobre Mim" */
+.sobreMim .diferente {
+  font-family: "Great Vibes", cursive; /* Fonte cursiva para o destaque */
+  font-size: 120px; /* Tamanho grande para o texto destacado */
+}
+
+/* Estilos para os textos dentro da seção "Sobre Mim" */
+.sobreMim .textos {
+  color: #eae5d5; /* Cor do texto */
+  display: flex; /* Usando flexbox */
+  justify-content: center; /* Alinha os itens horizontalmente no centro */
+  flex-direction: column; /* Organiza os itens em coluna */
+}
+
+/* Estilos para o bloco de informações na seção "Sobre Mim" */
+.sobreMim .informacoes {
+  display: flex; /* Usa flexbox para os itens de informação */
+  justify-content: space-between; /* Distribui os itens igualmente */
+  text-transform: uppercase; /* Transforma o texto para letras maiúsculas */
+}
+
+/* Estilos para a imagem (foto) na seção "Sobre Mim" */
+.sobreMim .imagem .minhaFoto {
+  z-index: 2; /* Coloca a foto acima de outros elementos */
+  padding-right: 80px; /* Espaço à direita da foto */
+  padding-left: 200px; /* Espaço à esquerda da foto */
+}
+
+/* Estilos para o logo na seção "Sobre Mim" */
+.sobreMim .imagem .minhaLogo {
+  height: 200px; /* Altura do logo */
+  width: auto; /* Largura automática para manter a proporção */
+  position: absolute; /* Posiciona o logo de forma absoluta */
+  z-index: 3; /* Coloca o logo acima de outros elementos */
+  bottom: -680px; /* Define a posição do logo a partir do fundo */
+  right: 80px; /* Define a posição à direita */
+}
+
+/* Estilos para as estrelas rosa na seção "Sobre Mim" */
+.sobreMim .imagem .estrelaRosa:nth-child(1) {
+  position: absolute; /* Posiciona a estrela de forma absoluta */
+  height: 60px; /* Define a altura da estrela */
+  width: auto; /* Largura automática para manter a proporção */
+  left: 80px; /* Define a posição da estrela à esquerda */
+  bottom: -210px; /* Define a posição da estrela a partir do fundo */
+}
+
+.sobreMim .imagem .estrelaRosa:nth-child(2) {
+  position: absolute; /* Posiciona a estrela de forma absoluta */
+  height: 60px; /* Define a altura da estrela */
+  width: auto; /* Largura automática para manter a proporção */
+  right: 170px; /* Define a posição da estrela à direita */
+  bottom: -220px; /* Define a posição da estrela a partir do fundo */
+}
+
+.sobreMim .imagem .estrelaRosa:nth-child(3) {
+  position: absolute; /* Posiciona a estrela de forma absoluta */
+  height: 60px; /* Define a altura da estrela */
+  width: auto; /* Largura automática para manter a proporção */
+  left: 800px; /* Define a posição da estrela à esquerda */
+  bottom: -640px; /* Define a posição da estrela a partir do fundo */
+}
+
+.botaoCurriculo {
+  background-color: #b98a80; /*Cor rosa padrão da paleta*/
+  color: #eae5d5; /*Cor bege padrão da paleta*/
+  border: none; /* Sem borda */
+  padding: 10px 20px; /* Espaços do botão */
+  font-size: 1rem; /* Tamanho do texto */
+  border-radius: 8px; /* Leve borda arredondada */
+  cursor: pointer; /* Aparecer o ponteiro de clicar */
+  margin-top: 20px; /* Margem de cima 20px */
+  transition: background-color 0.3s ease; /* Mudar de cor com uma transição leve */
+}
+
+.botaoCurriculo:hover {
+  background-color: #9e7870; /* Cor do botão ao colocar o mouse em cima */
+}
+
+/* Media queries para dispositivos com largura máxima de 1024px */
+@media (max-width: 1024px) {
+  .sobreMim {
+      flex-direction: column; /* Organiza os itens em coluna */
+      align-items: center; /* Alinha os itens no centro */
+      padding: 60px 30px; /* Ajusta o espaçamento interno */
+  }
+
+  .sobreMim h1 {
+      font-size: 60px; /* Ajusta o tamanho da fonte do título */
+      text-align: center; /* Centraliza o título */
+  }
+
+  .sobreMim h3 {
+      font-size: 40px; /* Ajusta o tamanho da fonte do subtítulo */
+      position: static; /* Remove o posicionamento absoluto */
+      text-align: center; /* Centraliza o subtítulo */
+      margin-top: -20px; /* Ajusta a margem superior */
+      margin-bottom: 30px; /* Ajusta a margem inferior */
+  }
+
+  .sobreMim .informacoes {
+      display: flex; /* Usa flexbox para a exibição */
+      flex-direction: row; /* Organiza os itens na horizontal */
+      align-items: center; /* Alinha os itens verticalmente ao centro */
+      justify-content: space-between; /* Distribui os itens igualmente */
+  }
+
+  .sobreMim .imagem {
+      display: flex; /* Usa flexbox para o layout das imagens */
+      flex-direction: column; /* Organiza as imagens em coluna */
+      align-items: center; /* Centraliza as imagens */
+  }
+
+  .sobreMim .imagem .minhaFoto {
+      width: 80%; /* Ajusta a largura da foto */
+      padding: 0; /* Remove o padding */
+  }
+
+  .sobreMim .imagem .minhaLogo {
+      height: 150px; /* Ajusta a altura do logo */
+      position: static; /* Remove o posicionamento absoluto */
+      margin-top: -90px; /* Ajusta a margem superior */
+      margin-left: 300px; /* Ajusta a margem esquerda */
+  }
+
+  .sobreMim .imagem .estrelaRosa {
+      z-index: 3; /* Coloca as estrelas acima de outros elementos */
+  }
+
+  .sobreMim .imagem .estrelaRosa:nth-child(1) {
+      left: 10vw; /* Ajusta a posição da primeira estrela */
+      top: 140vw; /* Ajusta a posição da primeira estrela */
+  }
+
+  .sobreMim .imagem .estrelaRosa:nth-child(2) {
+      right: 10vw; /* Ajusta a posição da segunda estrela */
+      top: 160vw; /* Ajusta a posição da segunda estrela */
+  }
+
+  .sobreMim .imagem .estrelaRosa:nth-child(3) {
+      left: 13vw; /* Ajusta a posição da terceira estrela */
+      top: 240vw; /* Ajusta a posição da terceira estrela */
+  }
+}
+
+/* Media queries para dispositivos com largura máxima de 600px */
+@media (max-width: 600px) {
+  .sobreMim h1 {
+      font-size: 40px; /* Ajusta o tamanho da fonte do título para telas pequenas */
+  }
+
+  .sobreMim h3 {
+      font-size: 30px; /* Ajusta o tamanho da fonte do subtítulo para telas pequenas */
+  }
+
+  .sobreMim .texto {
+      text-align: center; /* Centraliza o texto */
+  }
+}

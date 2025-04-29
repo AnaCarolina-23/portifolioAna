@@ -1,0 +1,196 @@
+/* Estilo geral do componente Trabalho */
+.trabalho {
+  background-color: #536b87; /* Cor de fundo do componente */
+  padding: 60px; /* Espaçamento interno geral */
+  padding-top: 0; /* Remove o espaçamento superior */
+}
+
+/* Estilo do cabeçalho */
+.trabalho .cabecalho {
+  display: flex; /* Usa o modelo flexbox para alinhar os itens */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  gap: 40px; /* Espaço de 40px entre os elementos dentro do cabeçalho */
+  position: relative; /* Permite posicionamento absoluto dentro do cabeçalho */
+  padding-bottom: 100px; /* Espaçamento inferior para o cabeçalho */
+}
+
+/* Estilo para a imagem do logo */
+.trabalho .logo img {
+  width: 200px; /* Define a largura do logo */
+  height: auto; /* A altura será ajustada automaticamente para manter a proporção */
+  margin-top: -90px; /* Ajuste da posição superior do logo */
+}
+
+/* Estilo para os textos do cabeçalho */
+.trabalho .textos {
+  display: flex; /* Usa flexbox para alinhar os textos */
+  flex-direction: column; /* Os itens dentro dos textos serão dispostos em coluna */
+  align-items: flex-start; /* Alinha os itens no início, à esquerda */
+  position: relative; /* Permite o posicionamento absoluto dos elementos dentro */
+  line-height: 1; /* Define o espaçamento entre as linhas */
+}
+
+/* Estilo para os parágrafos dentro de .textos */
+.trabalho .textos p {
+  margin: 0; /* Remove a margem */
+  padding: 0; /* Remove o padding */
+  text-transform: uppercase; /* Coloca o texto em maiúsculas */
+  letter-spacing: 1px; /* Define o espaçamento entre as letras */
+  position: absolute; /* Permite posicionamento absoluto */
+  top: -20px; /* Ajuste da posição superior */
+  left: 5px; /* Ajuste da posição à esquerda */
+}
+
+/* Estilo do título h1 */
+.trabalho h1 {
+  font-family: "Questrial", sans-serif; /* Define a fonte */
+  font-size: 80px; /* Define o tamanho da fonte */
+  margin: 0; /* Remove a margem */
+  padding: 0; /* Remove o padding */
+}
+
+/* Estilo para o span com a classe "diferente" */
+.trabalho .diferente {
+  font-family: "Great Vibes", cursive; /* Fonte cursiva */
+  font-size: 120px; /* Tamanho da fonte */
+  position: relative; /* Permite o posicionamento relativo */
+  top: 10px; /* Ajuste da posição superior */
+  left: -10px; /* Ajuste da posição à esquerda */
+}
+
+/* Estilo para as estrelas beges */
+.trabalho .estrelasBeges img {
+  height: 60px; /* Altura das imagens de estrela */
+  width: auto; /* A largura será ajustada automaticamente */
+  position: absolute; /* Permite o posicionamento absoluto das imagens */
+}
+
+/* Estilo do conteúdo da seção */
+.trabalho .conteudo {
+  background-color: #eae5d5; /* Cor de fundo do conteúdo */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 10px; /* Bordas arredondadas */
+  display: flex; /* Usa o modelo flexbox */
+  justify-content: space-between; /* Espaço entre os itens */
+  flex-direction: row; /* Itens dispostos em linha */
+}
+
+/* Estilo para a seção "mais" */
+.trabalho .mais {
+  padding-top: 60px; /* Espaçamento superior */
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo para a seção de contatos */
+.trabalho .contatos {
+  padding-top: 40px; /* Espaçamento superior */
+  padding-right: 60px; /* Espaçamento à direita */
+}
+
+/* Estilo para o primeiro bloco de informações de contato */
+.trabalho .contatos div:first-child {
+  display: flex; /* Flexbox */
+  flex-direction: row; /* Disposição em linha */
+  color: #eae5d5; /* Cor do texto */
+  justify-content: space-between; /* Espaço entre os itens */
+}
+
+/* Estilo para os parágrafos dentro do primeiro bloco de contatos */
+.trabalho .contatos div:first-child p {
+  max-width: 100px; /* Limita a largura máxima dos parágrafos */
+}
+
+/* Estilo para o segundo bloco de informações de contato */
+.trabalho .contatos div:last-child {
+  display: flex; /* Flexbox */
+  flex-direction: row; /* Disposição em linha */
+  text-transform: uppercase; /* Coloca o texto em maiúsculas */
+  justify-content: space-between; /* Espaço entre os itens */
+}
+
+/* Estilo para a posição das estrelas beges */
+.trabalho .estrelasBeges img:nth-child(1) {
+  top: 5510px; /* Ajuste da posição superior */
+  left: 360px; /* Ajuste da posição à esquerda */
+}
+
+.trabalho .estrelasBeges img:nth-child(2) {
+  right: 280px; /* Ajuste da posição à direita */
+  top: 5900px; /* Ajuste da posição superior */
+}
+
+/* Responsividade: Estilos para telas com largura máxima de 1024px */
+@media (max-width: 1024px) {
+  .trabalho h1 {
+    font-size: 60px; /* Ajuste do tamanho da fonte do título */
+  }
+
+  .trabalho .diferente {
+    font-size: 90px; /* Ajuste do tamanho da fonte do "T" estilizado */
+  }
+
+  .trabalho .logo img {
+    width: 150px; /* Ajuste da largura do logo */
+  }
+
+  .trabalho .textos p {
+    top: -15px; /* Ajuste da posição dos textos */
+    font-size: 14px; /* Ajuste do tamanho da fonte */
+  }
+}
+
+/* Responsividade: Estilos para telas com largura máxima de 768px */
+@media (max-width: 768px) {
+  .trabalho h1 {
+    font-size: 50px; /* Ajuste do tamanho da fonte do título */
+  }
+
+  .trabalho .diferente {
+    font-size: 70px; /* Ajuste do tamanho da fonte do "T" estilizado */
+  }
+
+  .trabalho .conteudo {
+    flex-direction: column; /* Altera a direção dos itens para coluna */
+    align-items: center; /* Alinha os itens ao centro */
+  }
+
+  .trabalho .contatos div:first-child,
+  .trabalho .contatos div:last-child {
+    flex-direction: column; /* Alinha os itens dos dois blocos de contatos em coluna */
+    align-items: center; /* Alinha ao centro */
+    gap: 10px; /* Adiciona espaçamento entre os itens */
+  }
+
+  .trabalho .estrelasBeges img {
+    height: 40px; /* Ajuste da altura das estrelas */
+  }
+}
+
+/* Responsividade: Estilos para telas com largura máxima de 480px */
+@media (max-width: 480px) {
+  .trabalho h1 {
+    font-size: 40px; /* Ajuste do tamanho da fonte do título */
+  }
+
+  .trabalho .diferente {
+    font-size: 60px; /* Ajuste do tamanho da fonte do "T" estilizado */
+  }
+
+  .trabalho .logo img {
+    width: 120px; /* Ajuste da largura do logo */
+    margin-top: -60px; /* Ajuste da posição superior do logo */
+  }
+
+  .trabalho .conteudo p {
+    font-size: 16px; /* Ajuste do tamanho da fonte nos parágrafos */
+  }
+
+  .trabalho .mais {
+    font-size: 16px; /* Ajuste do tamanho da fonte da seção "mais" */
+  }
+
+  .trabalho .estrelasBeges img {
+    height: 30px; /* Ajuste da altura das estrelas */
+  }
+}

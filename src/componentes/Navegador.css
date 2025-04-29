@@ -1,0 +1,68 @@
+/* Estilo básico para a barra de navegação */
+.navbar {
+    font-family: "Questrial", sans-serif; /* Define a fonte da barra de navegação */
+    position: fixed; /* A barra de navegação fica fixa no topo da página */
+    top: 0; /* A barra fica no topo da página */
+    width: 100%; /* A largura da barra é 100% da tela */
+    transition: background-color 0.3s ease; /* Transição suave para a mudança de cor de fundo */
+    background-color: transparent; /* Cor de fundo inicial é transparente */
+    color: #eae5d5; /* Cor do texto da barra de navegação */
+    z-index: 1000; /* Garante que a barra fique acima de outros elementos */
+    padding: 15px 40px; /* Espaçamento interno (padding) na barra de navegação */
+}
+
+/* Estilo para a barra quando o usuário rola a página */
+.navbar.scrolled {
+    background-color: #536b87; /* Cor de fundo quando a página é rolada */
+}
+
+/* Estilos para o conteúdo da barra de navegação */
+.navbarContent {
+    display: flex; /* Usando flexbox para alinhar os itens na barra */
+    justify-content: space-between; /* Espaça os itens igualmente entre as extremidades */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+
+/* Estilo para o logo */
+.logo {
+    height: 60px; /* Define a altura do logo */
+    width: auto; /* Largura automática para manter a proporção */
+}
+
+/* Estilos para a lista de links de navegação */
+.navLinks {
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex; /* Usa flexbox para alinhar os itens horizontalmente */
+    gap: 20px; /* Espaço entre os links */
+    margin: 0; /* Remove as margens padrões da lista */
+    padding-right: 80px; /* Adiciona um espaçamento à direita dos links */
+}
+
+/* Estilos para os links da barra de navegação */
+.navLinks li a {
+    color: #eae5d5; /* Cor do texto dos links */
+    text-transform: uppercase; /* Transforma o texto para letras maiúsculas */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold; /* Deixa o texto em negrito */
+    transition: color 0.3s; /* Transição suave para a cor do link */
+    font-size: 15px; /* Tamanho da fonte */
+}
+
+/* Efeito de hover para os links */
+.navLinks li a:hover {
+    color: #eae5d5; /* Altera a cor do link quando o usuário passa o mouse */
+}
+
+/* Responsividade para telas menores que 768px (celulares, tablets) */
+@media (max-width: 768px) {
+
+    .navLinks li a{
+        font-size: 2vw; /* tamanho da letra pequeno */
+    }
+
+    .logo img{
+        width: 10vw; /* tamanho da logo pequena */
+        height: auto;
+    }
+
+}

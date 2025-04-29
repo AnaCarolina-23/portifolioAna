@@ -1,0 +1,23 @@
+/* Estilo geral do rodapé */
+.footer {
+  background-color: #3f413e; /* Fundo cinza escuro */
+  color: #eae5d5; /* Texto bege claro */
+  text-align: center; /* Centraliza o texto */
+  padding: 8px; /* Espaçamento interno */
+  font-size: 14px; /* Tamanho da fonte */
+  letter-spacing: 1px; /* Espaçamento entre letras */
+  font-family: 'Questrial', sans-serif; /* Fonte principal */
+}
+
+/* Estiliza apenas o nome (Ana Carolina) dentro do footer */
+.footer .nome {
+  font-family: "Mea Culpa", cursive; /* Fonte cursiva especial */
+  padding-left: 5px; /* Espaço à esquerda para separar do texto */
+}
+
+/* Estiliza o parágrafo dentro do footer */
+.footer p {
+  display: flex; /* Usa flexbox para alinhamento */
+  text-align: center; /* Centraliza o texto */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+}
